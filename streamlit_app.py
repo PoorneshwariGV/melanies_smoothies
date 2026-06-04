@@ -35,6 +35,7 @@ if ingredients_list:
     for fruit_chosen in ingredients_list:
         ingredients_string+=fruit_chosen+' '
     #st.write(ingredients_string)
+        st.subheader(fruit_chosen+' Nutrition information')
         smoothiefroot_response = requests.get(
         "https://my.smoothiefroot.com/api/fruit/watermelon"
          )
